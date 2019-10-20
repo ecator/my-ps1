@@ -7,7 +7,7 @@ function parse_git_branch() {
     [ -z "$git_branch" ] && return 0
     if [ -z "$git_status" ]
     then
-        color_echo "${git_branch}O" cyan defalut
+        color_echo "${git_branch}" cyan defalut
     else
         color_echo "${git_branch}X" red defalut
     fi
@@ -32,7 +32,7 @@ function color_echo() {
         start_color="${start_color}32;"
         ;;
     cyan)
-        start_color="${start_color}36"
+        start_color="${start_color}36;"
         ;;
     red)
         start_color="${start_color}31;"
