@@ -1,0 +1,52 @@
+" 一些常用 vim 设置
+" 主要参考 http://www.ruanyifeng.com/blog/2018/09/vimrc.html
+" 可以用 source /path/to/vimrc.local 来进行导入
+
+" 显示行号和标尺
+set number
+set ruler
+
+" 不与 Vi 兼容
+set nocompatible
+
+" 语法高亮
+syntax on
+
+" 自动缩进
+set autoindent
+set shiftwidth=2
+
+" 替换tab为空格
+set expandtab
+set tabstop=2
+set softtabstop=2
+
+" 折行
+set wrap
+
+" 开启文件类型检查
+filetype indent on
+
+" 支持鼠标
+set mouse=a
+
+" 搜索优化
+set showmatch
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" 不创建备份文件。默认情况下，文件保存时，会额外创建一个备份文件，它的文件名是在原文件名的末尾，再添加一个波浪号（〜）
+set nobackup
+
+" 如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
+set listchars=tab:»■,trail:■
+set list
+
+" 文件发生变化时提示
+set autoread
+
+" 命令模式下，底部操作指令按下 Tab 键自动补全
+set wildmenu
+set wildmode=longest:list,full
